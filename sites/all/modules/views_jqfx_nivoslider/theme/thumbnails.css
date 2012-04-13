@@ -1,0 +1,37 @@
+.views-jqfx-nivoslider {
+  margin-bottom: 60px;
+}
+
+.views-jqfx-nivoslider .nivo-controlNav {
+  position: absolute;
+  left: 40%;
+  bottom: -65px;
+}
+
+.views-jqfx-nivoslider .nivo-controlNav a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("images/loading.gif") no-repeat scroll 50% 50% #EFE9D1;
+  text-indent: -9999px;
+  border: 0;
+  margin-right: 10px;
+  float: left;
+}
+
+.views-jqfx-nivoslider .nivo-controlNav a.active {
+  background-position: 0 -22px;
+}
+
+.views-jqfx-nivoslider .nivo-controlNav img {
+  display: inline;
+  -moz-box-shadow: 0 0 5px #333;
+  -webkit-box-shadow: 0 0 5px #333;
+  box-shadow: 0 0 5px #333;
+  width: 100%;
+  height: 100%;
+}
+
+.views-jqfx-nivoslider .nivo-controlNav a.active img {
+  border: 1px solid #000000;
+}

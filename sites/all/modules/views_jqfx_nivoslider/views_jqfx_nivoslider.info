@@ -1,0 +1,16 @@
+name = Views jQFX: Nivo Slider
+description = Integrates the Nivo Slider plugin with Views jQFX.
+dependencies[] = views_jqfx
+dependencies[] = libraries
+package = Views
+core = 7.x
+files[] = views_jqfx_nivoslider.module
+files[] = views_jqfx_nivoslider.views_jqfx.inc
+files[] = theme/views_jqfx_nivoslider.theme.inc
+
+; Information added by drupal.org packaging script on 2011-09-19
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "views_jqfx_nivoslider"
+datestamp = "1316435393"
+

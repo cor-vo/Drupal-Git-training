@@ -1,0 +1,38 @@
+<?php
+/**
+ *  @file
+ *  Integrating Nivo Slider with Views jQFX.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function views_jqfx_nivoslider_theme($existing, $type, $theme, $path) {
+  return array(
+    'views_jqfx_nivoslider' => array(
+      'variables' => array('view' => NULL, 'options' => array(), 'rows' => array(), 'title' => ''),
+      'template' => 'views-jqfx-nivoslider',
+      'file' => 'views_jqfx_nivoslider.theme.inc',
+      'path' => $path . '/theme',
+    ),
+  );
+}
+
+/**
+ * Scan Nivo Slider theme folder and return theme list.
+ */
+function views_jqfx_nivoslider_styles() {
+  // Path to nivo slider theme
+  $theme_path = libraries_get_path('nivo-slider') . '/themes';
+  // List themes
+  $files = file_scan_directory($theme_path, '/.*/', array('recurse' => FALSE));
+  $styles = array();
+  if (is_array($files)) {
+    foreach ($files as $path => $file) {
+      if (is_dir($path) && file_exists($path . '/' . $file->filename . '.css')) {
+      $styles[] = $file->filename;
+      }
+    }
+  }
+  return array_combine($styles, $styles);
+}
