@@ -1,6 +1,6 @@
 ; $Id$
 name = Create module
-description = my first module
+description = my first module for drupal
 package = Development
 version = "7.x-1.2"
 core = 7.x
