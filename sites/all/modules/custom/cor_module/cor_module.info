@@ -1,0 +1,11 @@
+; $Id$
+name = Create module
+description = my first module
+package = Development
+version = "7.x-1.2"
+core = 7.x
+
+files[] = cor_module.admin.inc
+files[] = cor_module.module
+
+dependencies[] = node
